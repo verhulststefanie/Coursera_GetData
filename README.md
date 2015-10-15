@@ -15,8 +15,8 @@ as they are loaded in and used by the script:
 
 ## Running the Script
 In your R console, type the following:
-    source("run_analysis.R")
-    createTidyDataset()
+* source("run_analysis.R")
+* createTidyDataset()
 
 ## Generated Output
 A tidy dataset is written to a .txt file named "tidyData.txt" using write.table\(\). This dataset is generated using the following steps, as described in more detail in the "CodeBook.md" which can also be found in this repository.
