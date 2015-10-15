@@ -41,7 +41,7 @@ The R script called "run\_analysis.R" performs the following steps on the origin
 The tidy data is stored in a .txt file named "tidyData.txt". Its structure is as follows:
 * "activity": The action performed by the subject during measurement. Factor variable consisting of the possible values: "laying", "sitting", "standing", "walking", "walkingdownstairs" and "walkingupstairs".
 * "subjectid": The numerical identifier for the subject studied. Factor variable consisting of all values between "1" and "30".
-* 79 Feature vectors, averaged for each combination of activity and subject:
+* 79 Features, averaged for each combination of activity and subject:
 	* "timebodyaccelerationmeanx"
 	* "timebodyaccelerationmeany"
 	* "timebodyaccelerationmeanz"
