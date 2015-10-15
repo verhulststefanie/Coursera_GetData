@@ -14,10 +14,10 @@ Constructing the tidy dataset directly uses the following files from the origina
 
 ##Steps Performed to Obtain Tidy Dataset
 1. Download the original dataset [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
-2. Extract the files from the downloaded .zip-file in the same folder that contains the R script run_analysis.R, which transforms the raw data into a tidy dataset.
+2. Extract the files from the downloaded .zip-file in the same folder that contains the R script "run_analysis.R", which transforms the raw data into a tidy dataset.
      * Ensure all files are contained in a folder named "UCI HAR Dataset".
      * Do not change the internal map structure of the "UCI HAR Dataset" folder.
-The R script called "run\_analysis.R"" performs the following steps on the original dataset to obtain a tidy dataset: 
+The R script called "run\_analysis.R" performs the following steps on the original dataset to obtain a tidy dataset: 
 3. Merges the training and the test sets to create one data set.
      * The files "X\_train.txt" and "X\_test.txt" are merged horizontally.
      * Column names are extracted from "features.txt" and added to the dataset.
@@ -30,12 +30,13 @@ The R script called "run\_analysis.R"" performs the following steps on the origi
      * The factor labels are transformed to lower case and underscores are removed.
 6. Appropriately labels the data set with descriptive variable names. 
      * The column names added in step 3 are now parsed to make them more descriptive as suggested in the course lectures and in [this](https://class.coursera.org/getdata-033/forum/thread?thread_id=126) course discussion forum thread.
-     * This parsing involves replacing abbreviations such as "std" into their full form "StandardDeviation", etc. In addition, dots and capitalization of the column names is removed, resulting in variable names such as "timebodyaccelerationmeanx" and "activity" (now lower case), as suggested in the course lectures.
      * An error in the feature names of the original dataset where "Body" appeared twice as "BodyBody" was fixed by replacing "BodyBody" with "Body".
+     * This parsing involves replacing abbreviations such as "std" into their full form "StandardDeviation", etc. In addition, dots and capitalization of the column names is removed, resulting in variable names such as "timebodyaccelerationmeanx" and "activity" (now lower case), as suggested in the course lectures.
 7. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
      * To the dataset resulting from the steps above, the subjects from which the data were collected are added as a column named "subjectid".
-     * The above dataset is then aggregated using the mean function, grouped by the activity and subject id.
-     * The dataset is written to a .txt file named "tidyData.txt" using write.table()
+     * The above dataset is then aggregated using the mean function, grouped by the activity and subjectid.
+     * The dataset is written to a .txt file named "tidyData.txt" using write.table\(\).
+     
 ##Tidy Data
 The tidy data is stored in a .txt file named "tidyData.txt". Its structure is as follows:
 * "activity": The action performed by the subject during measurement. Factor variable consisting of the possible values: "laying", "sitting", "standing", "walking", "walkingdownstairs" and "walkingupstairs".
