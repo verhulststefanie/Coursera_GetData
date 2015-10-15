@@ -1,10 +1,10 @@
 # Getting and Cleaning Data Course Project
-This README file explains how the script in this GitHub repository works.
-In this GitHuB repository you will find the script "run_analysis.R".
+This README file explains how the script "run_analysis.R", found in this GitHub repository, works.
 ## Prerequisites
 The requirements for running this file are as follows:
 * You must have R installed.
-* The original dataset, which can be obtained [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), needs to be unpacked into the R working directory in the folder "UCI HAR Dataset". * Do not change the internal map structure of the "UCI HAR Dataset" folder.
+* The original dataset, which can be obtained [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), needs to be unpacked into the R working directory in the folder "UCI HAR Dataset". 
+* Do not change the internal map structure of the "UCI HAR Dataset" folder.
 
 In addition, your R installation needs to have the following packages installed,
 as they are loaded in and used by the script:
