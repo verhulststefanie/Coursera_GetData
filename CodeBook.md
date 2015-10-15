@@ -29,8 +29,8 @@ The R script called "run\_analysis.R" performs the following steps on the origin
      * The numerical labels are replaced by factor labels as described in "activity\_labels.txt".
      * The factor labels are transformed to lower case and underscores are removed.
 6. Appropriately labels the data set with descriptive variable names. 
-     * The column names added in step 3 are now parsed to make them more descriptive as suggested in the course lectures and in [this](https://class.coursera.org/getdata-033/forum/thread?thread_id=126) course discussion forum thread.
      * An error in the feature names of the original dataset where "Body" appeared twice as "BodyBody" was fixed by replacing "BodyBody" with "Body".
+     * The column names added in step 3 are now parsed to make them more descriptive as suggested in the course lectures and in [this](https://class.coursera.org/getdata-033/forum/thread?thread_id=126) course discussion forum thread.
      * This parsing involves replacing abbreviations such as "std" into their full form "StandardDeviation", etc. In addition, dots and capitalization of the column names is removed, resulting in variable names such as "timebodyaccelerationmeanx" and "activity" (now lower case), as suggested in the course lectures.
 7. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
      * To the dataset resulting from the steps above, the subjects from which the data were collected are added as a column named "subjectid".
@@ -44,7 +44,7 @@ The tidy data is stored in a .txt file named "tidyData.txt". Its structure is as
 * 79 Feature vectors, averaged for each combination of activity and subject:
      * "timebodyaccelerationmeanx"                              
      * "timebodyaccelerationmeany"                              
-     * "timebodyaccelerationmeanz"                              
+     * "timebodyaccelerationmeanz"                          
 	* "timebodyaccelerationstandarddeviationx"                 
 	* "timebodyaccelerationstandarddeviationy"                 
 	* "timebodyaccelerationstandarddeviationz"                 
