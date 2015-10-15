@@ -1,4 +1,4 @@
-#CodeBook: Getting and Cleaning Data Course Project
+# CodeBook: Getting and Cleaning Data Course Project
 ### Created by Stefanie Verhulst on October 15, 2015
 This code book describes the variables, the data, and the transformations performed to clean up the data for the **Getting and Cleaning Data** course project.
 The original dataset used in this assignment is available [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
